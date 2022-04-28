@@ -347,7 +347,7 @@ void Stopper::Fuzzy_to2ndGap(double laserData1, double laserData2)
     int mleftSensor, mrightSensor;
     // sensor data fuzzification
     if (laserData1 < 0.5) mleftSensor = 1;
-    else if (laserData1 < 1) mleftSensor = 2;
+    else if (laserData1 < 0.8) mleftSensor = 2;
     else mleftSensor = 3;
 
     if (laserData2 < 0.5) mrightSensor = 1;
